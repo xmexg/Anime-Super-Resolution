@@ -7,7 +7,7 @@ Created on Wed Apr 24 21:30:14 2019
 
 import tensorflow as tf
 from keras import backend as K
-from keras.optimizers import Adam
+from tensorflow.keras.optimizers import Adam
 from tqdm import tqdm
 
 class AdamWithWeightsNormalization(Adam):

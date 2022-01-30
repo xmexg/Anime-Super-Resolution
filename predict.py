@@ -12,7 +12,7 @@ from PIL import Image
 from keras import backend as K
 from keras.losses import mean_absolute_error, mean_squared_error
 from keras.models import load_model
-from keras.optimizers import Adam
+from tensorflow.keras.optimizers import Adam
 import random
 import os
 from model import wdsr_a, wdsr_b

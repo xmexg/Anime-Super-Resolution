@@ -12,7 +12,7 @@ from keras.layers import Add, Conv2D, Input, Lambda, Activation
 from keras.models import Model
 
 def SubpixelConv2D(scale, **kwargs):
-    return Lambda(lambda x: tf.depth_to_space(x, scale), **kwargs)
+    return Lambda(lambda x: tf.nn.depth_to_space(x, scale), **kwargs) # ttps://www.tensorflow.org/s/results?hl=zh_cn&q=depth_to_space
 
 def Normalization(**kwargs):
     # you can change this if you know mean in dataset
